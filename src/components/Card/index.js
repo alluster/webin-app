@@ -35,28 +35,30 @@ const InfoCard = (props) =>{
 					{
 						props.right ?
 							<StyledRow>
-								<StyledCol  xs={6} sm={6} md={6} lg={6}>
+								<StyledCol  xs={12} sm={12} md={6} lg={6}>
 										<ImageContainer>
 											<Image src={props.image} />
 										</ImageContainer>
 									</StyledCol >
 
-									<StyledCol  xs={6} sm={6} md={6} lg={6}>
+								<StyledCol  xs={12} sm={12} md={6} lg={6}>
 										<Text >
 											<H1 bold>{props.topic}</H1>
+											<H4 bold>{props.ingress}</H4>
 											<H5>{props.body}</H5>
 										</Text>
 								</StyledCol >
 							</StyledRow>
 							:
 							<StyledRow>
-								<StyledCol  xs={6} sm={6} md={6} lg={6}>
+								<StyledCol  xs={12} sm={12} md={6} lg={6}>
 									<Text >
 										<H1 bold>{props.topic}</H1>
+										<H4 bold>{props.ingress}</H4>
 										<H5>{props.body}</H5>
 									</Text>
 								</StyledCol >
-								<StyledCol  xs={6} sm={6} md={6} lg={6}>
+								<StyledCol  xs={12} sm={12} md={6} lg={6}>
 									<ImageContainer>
 										<Image src={props.image} />
 									</ImageContainer>

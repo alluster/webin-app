@@ -9,11 +9,11 @@ const Content = styled.div`
     color: ${props => props.theme.colors.white};
     background-color: #0F7280;
     width: 100%;
-    height: 400px;
+    height: 600px;
     font-family: 'Raleway', sans-serif;
 
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
-       height: 600px;
+       height: 700px;
 
     }
 `;
@@ -25,7 +25,6 @@ const TextContainer = styled.div`
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
         text-align: center;
         transform: translate(0%, 0%);
-        height: 100%;
         padding: 10px;
     }
 `;
@@ -34,7 +33,6 @@ const CardText = styled.div`
     padding: 10px;
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
         transform: translate(0%, 0%);
-        height: 100%;
         padding: 10px;
     }
 `;
@@ -51,21 +49,30 @@ const ProfileImage = styled.img`
     text-align: right;
     align-self: flex-end;
     margin-left: auto
-
-`
-const Name = styled(H5)`
+    @media (max-width: ${props => props.theme.screenSize.tablet}) {
+        display: none
+    }`
+const Name = styled(H4)`
 line-height: 10px;
 margin-top: 0px
-`
-const Position = styled(H5)`
+@media (max-width: ${props => props.theme.screenSize.tablet}) {
+    text-align: center
+}`
+const Position = styled(H4)`
 line-height: 10px;
-`
-const Email = styled(H5)`
+@media (max-width: ${props => props.theme.screenSize.tablet}) {
+    text-align: center
+}`
+const Email = styled(H4)`
 line-height: 10px;
-`
-const Phone = styled(H5)`
+@media (max-width: ${props => props.theme.screenSize.tablet}) {
+    text-align: center
+}`
+const Phone = styled(H4)`
 line-height: 10px;
-`
+@media (max-width: ${props => props.theme.screenSize.tablet}) {
+    text-align: center
+}`
 
 ;
 const Section = () =>
@@ -73,15 +80,17 @@ const Section = () =>
         <Content>
             <Container>
                 <TextContainer>
-                    <H2 light bold>Ota yhteyttä niin suunnitellaan yhdessä verkkosivuprojektisi!</H2>
+                    <H1 light bold>Ota yhteyttä!</H1>
+                    <H2 light >Suunnitellaan yhdessä uusi projekti!</H2>
+
                 </TextContainer>
 
                 <StyledRow >
 
-                    <StyledCol   mdOffset={3} xs={6} sm={6} md={3} lg={3}>
+                    <StyledCol   mdOffset={3} xs={12} sm={12} md={3} lg={3}>
                         <ProfileImage src='https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10356345_625753394174801_4909397701096970187_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-1.xx&oh=dc72b780cd62254184337f5be1d38c98&oe=5D712D4A' />
                     </StyledCol>
-                    <StyledCol xs={6} sm={6} md={6} lg={6}>
+                    <StyledCol xs={12} sm={12} md={6} lg={6}>
                     <CardText >
                         <Name bold light>Aleksanteri Heliövaara</Name>
                         <Position  light>Sales / Creative Director</Position>

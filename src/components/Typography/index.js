@@ -125,7 +125,7 @@ export const H5 = styled(Font)
     margin-top: ${props => props.theme.fontSize.h5};
     margin-bottom: ${props => props.theme.fontSize.h5};
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
-		font-size: calc(${props => props.theme.fontSize.h5} - .5rem);
+		font-size: calc(${props => props.theme.fontSize.h5} - .3rem);
 		line-height: ${props => props.theme.fontSize.h5};
     }
 `;

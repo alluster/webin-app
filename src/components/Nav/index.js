@@ -53,8 +53,7 @@ ${props => {
 			display: none;
 		`;
 	}};
-	
-	top; 0;
+	// background-color: rgba(255, 0, 0, 0.3);	top; 0;
 	margin-top: 0px !mportant;
 	height: 50px;
 	top: 0;

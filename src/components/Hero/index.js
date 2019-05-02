@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Button} from '../Button';
 import Wrapper from 'components/Wrapper'
 import { H1, H5 } from '../Typography';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Container = styled.div`
 	height: 100vh;
@@ -57,7 +58,9 @@ class Hero extends Component {
 		
 				<H1 bold light secondary >Verkkosivut yrityksellesi</H1>
 				<H5 bold light secondary >Webin.fi suunnittelee ja toteuttaa verkkosivut uusimmilla sisällönhallintatyökaluilla. </H5>
-
+				<AnchorLink href='#palvelumme'>
+					<Button  large primary >Lue lisää</Button>
+				</AnchorLink>
 			</ContentBlock>
 			<Overlay />
 		</Container>
