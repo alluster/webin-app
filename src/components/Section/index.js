@@ -66,12 +66,14 @@ line-height: 10px;
 const Email = styled(H4)`
 line-height: 10px;
 @media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center
+    text-align: center;
+    font-size: 16px;
 }`
 const Phone = styled(H4)`
 line-height: 10px;
 @media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center
+    text-align: center;
+    font-size: 16px;
 }`
 
 ;

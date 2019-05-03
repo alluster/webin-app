@@ -27,7 +27,7 @@ const ContentBlock = styled(Wrapper)`
 	left: 50%;
     transform: translate(-50%, -0%);
 	position: absolute;
-	top: 30vh;
+	top: 20vh;
 	// height: 100vh;
 	text-align: center;
 	z-index: 2;
