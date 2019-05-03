@@ -11,7 +11,7 @@ app.use(cors());
 const router = express.Router();
 
 // this is our MongoDB database
-const dbRoute = "mongodb+srv://aleksanteri:Journa17_@cluster0-zbacl.mongodb.net/news?retryWrites=true";
+const dbRoute = "";
 
 // connects our back end code with the database
 mongoose.connect(

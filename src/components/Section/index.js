@@ -94,7 +94,7 @@ const Section = () =>
                     <CardText >
                         <Name bold light>Aleksanteri Heliövaara</Name>
                         <Position  light>Sales / Creative Director</Position>
-                        {/* <Email  light>	<FontAwesomeIcon icon="envelope" /> info@webin.fi</Email> */}
+                        <Email  light>	<FontAwesomeIcon icon="envelope" />  verkkosivutyrityksellesi@gmail.com</Email>
                         <Phone  light><FontAwesomeIcon icon="phone" /> +358442360403</Phone>
                     </CardText>
                     </StyledCol>
