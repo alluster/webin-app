@@ -87,10 +87,10 @@ const Section = () =>
 
                 <StyledRow >
 
-                    <StyledCol   mdOffset={3} xs={12} sm={12} md={3} lg={3}>
+                    <StyledCol   mdOffset={2} xs={12} sm={12} md={2} lg={2}>
                         <ProfileImage src='https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10356345_625753394174801_4909397701096970187_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-1.xx&oh=dc72b780cd62254184337f5be1d38c98&oe=5D712D4A' />
                     </StyledCol>
-                    <StyledCol xs={12} sm={12} md={6} lg={6}>
+                    <StyledCol xs={12} sm={12} md={8} lg={8}>
                     <CardText >
                         <Name bold light>Aleksanteri Heliövaara</Name>
                         <Position  light>Sales / Creative Director</Position>

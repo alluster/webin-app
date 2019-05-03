@@ -9,8 +9,10 @@ const Text = styled.div`
 	margin-left: 20px;
 	height: auto;
 	padding: 60px;
+	@media (max-width: ${props => props.theme.screenSize.tablet}) {
+		padding: 10px;
+	}`;
 
-`;
 const ImageContainer = styled.div`
 	background-position: cover;  
 	background-color: black;
