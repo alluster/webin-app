@@ -4,24 +4,29 @@ import { StyledRow, StyledCol  } from 'components/FlexBox';
 import {Button} from 'components/Button';
 import styled from 'styled-components';
 
-
+const Container = styled.div`
+	min-height: auto;
+`
 const Text = styled.div`
 	margin-left: 20px;
 	height: auto;
 	padding: 60px;
-	@media (max-width: ${props => props.theme.screenSize.tablet}) {
+		@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		padding: 10px;
 	}`;
 
 const ImageContainer = styled.div`
 	background-position: cover;  
 	background-color: black;
-	height: 500px;
+	object-fit: cover;  
+	height: 100%;
+
+
 `;
 const Image = styled.img`
 	object-fit: cover;  
-	min-height: 100%;
-	height: 500px !important;
+	height: 100%;
+	// height: 500px !important;
 	width: 100%;
 	opacity: 0.7;
 
@@ -33,7 +38,7 @@ const ProfileButton = styled(Button)`
 `;
 const InfoCard = (props) =>{
 	return(
-			<div>
+			<Container>
 					{
 						props.right ?
 							<StyledRow>
@@ -67,7 +72,7 @@ const InfoCard = (props) =>{
 								</StyledCol >
 							</StyledRow>
 					}
-			</div>
+			</Container>
 						
 
 	)

@@ -58,7 +58,7 @@ ${props => {
 	height: 50px;
 	top: 0;
 	margin-left: 40px;
-	position: fixed;
+	position: absolute;
 	width: 90%;
 	z-index: 1000;
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {

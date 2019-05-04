@@ -83,14 +83,14 @@ const Section = () =>
             <Container>
                 <TextContainer>
                     <H1 light bold>Ota yhteyttä!</H1>
-                    <H2 light >Suunnitellaan yhdessä uusi projekti!</H2>
+                    <H2 light >Aloitetaan yhteistyö heti!</H2>
 
                 </TextContainer>
 
                 <StyledRow >
 
                     <StyledCol   mdOffset={2} xs={12} sm={12} md={2} lg={2}>
-                        <ProfileImage src='https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10356345_625753394174801_4909397701096970187_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-1.xx&oh=dc72b780cd62254184337f5be1d38c98&oe=5D712D4A' />
+                        <ProfileImage src='https://media.licdn.com/dms/image/C5603AQFmq_mfpxiKLg/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=eY_2z4ey2rNs26UQ1fAHC_YSDGOVgWSfWtGB7RtHJ8I' />
                     </StyledCol>
                     <StyledCol xs={12} sm={12} md={8} lg={8}>
                     <CardText >

@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const Overlay = styled.div`
-	background-color: black;
+	// background-color: black;
 	opacity: 0.5;
 	position: absolute;
 	top: 0;
@@ -56,8 +56,8 @@ class Hero extends Component {
 			<Image src="https://images.unsplash.com/photo-1547191516-45e9e58822db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
 			<ContentBlock >
 		
-				<H1 bold light secondary >Verkkosivut yrityksellesi</H1>
-				<H5 bold light secondary >Webin.fi suunnittelee ja toteuttaa verkkosivut uusimmilla sisällönhallintatyökaluilla. </H5>
+				<H1 bold light  >Verkkosivut yrityksellesi</H1>
+				<H5 bold light secondary >Suunnittelemme ja toteutamme yrityksesi digin uusimmilla teknologioilla.</H5>
 				<AnchorLink href='#palvelumme'>
 					<Button  large primary >Lue lisää</Button>
 				</AnchorLink>
