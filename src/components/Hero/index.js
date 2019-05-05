@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const Overlay = styled.div`
-	// background-color: black;
+	background-color: black;
 	opacity: 0.5;
 	position: absolute;
 	top: 0;
@@ -53,13 +53,13 @@ class Hero extends Component {
   render() {
 	return (
 		<Container>
-			<Image src="https://images.unsplash.com/photo-1547191516-45e9e58822db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+			<Image src="https://images.unsplash.com/photo-1556505622-49ea9f8eaf76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
 			<ContentBlock >
 		
-				<H1 bold light  >Verkkosivut yrityksellesi</H1>
-				<H5 bold light secondary >Suunnittelemme ja toteutamme yrityksesi digin uusimmilla teknologioilla.</H5>
+				<H1 bold light >Luotettava digipalveluiden tuottaja designista koodaukseen</H1>
+				<H5 bold light secondary >Suunnittelemme ja toteutamme yrityksesi digin uusimmilla teknologioilla ja designilla.</H5>
 				<AnchorLink href='#palvelumme'>
-					<Button  large primary >Lue lisää</Button>
+					<Button  large primary >Tutustu tarkemmin</Button>
 				</AnchorLink>
 			</ContentBlock>
 			<Overlay />

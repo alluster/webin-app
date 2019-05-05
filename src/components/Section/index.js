@@ -7,7 +7,7 @@ import { StyledRow, StyledCol  } from 'components/FlexBox';
 
 const Content = styled.div`
     color: ${props => props.theme.colors.white};
-    background-color: #0F7280;
+    background-color: #FF9700;
     width: 100%;
     height: 600px;
     font-family: 'Raleway', sans-serif;
@@ -41,42 +41,52 @@ const Logo = styled(H6) `
     text-align: center;
     `;
 
-
-
 const ProfileImage = styled.img`
     max-height: 150px;
     border-radius: 100px;
-    text-align: right;
-    align-self: flex-end;
     margin-left: auto
+    display: none
+
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
         display: none
-    }`
-const Name = styled(H4)`
-line-height: 10px;
-margin-top: 0px
-@media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center
-}`
-const Position = styled(H4)`
-line-height: 10px;
-@media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center
-}`
-const Email = styled(H4)`
-line-height: 10px;
-@media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center;
-    font-size: 16px;
-}`
-const Phone = styled(H4)`
-line-height: 10px;
-@media (max-width: ${props => props.theme.screenSize.tablet}) {
-    text-align: center;
-    font-size: 16px;
-}`
+    }`;
 
-;
+const Name = styled(H4)`
+    line-height: 10px;
+    margin-top: 0px
+    text-align: center;
+
+    @media (max-width: ${props => props.theme.screenSize.laptop}) {
+        text-align: center
+    }`;
+
+const Position = styled(H4)`
+    line-height: 10px;
+    text-align: center;
+
+    @media (max-width: ${props => props.theme.screenSize.laptop}) {
+        text-align: center
+    }`;
+
+const Email = styled(H4)`
+    line-height: 10px;
+    font-size: 18px;
+    text-align: center;
+
+    @media (max-width: ${props => props.theme.screenSize.laptop}) {
+        text-align: center;
+        font-size: 16px;
+    }`;
+
+const Phone = styled(H4)`
+    line-height: 10px;
+    text-align: center;
+
+    @media (max-width: ${props => props.theme.screenSize.laptop}) {
+        text-align: center;
+        font-size: 16px;
+    }`;
+
 const Section = () =>
     <div>
         <Content>
@@ -89,15 +99,15 @@ const Section = () =>
 
                 <StyledRow >
 
-                    <StyledCol   mdOffset={2} xs={12} sm={12} md={2} lg={2}>
+                    <StyledCol   xs={12} sm={12} md={2} lg={12}>
                         <ProfileImage src='https://media.licdn.com/dms/image/C5603AQFmq_mfpxiKLg/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=eY_2z4ey2rNs26UQ1fAHC_YSDGOVgWSfWtGB7RtHJ8I' />
                     </StyledCol>
-                    <StyledCol xs={12} sm={12} md={8} lg={8}>
+                    <StyledCol xs={12} sm={12} md={12} lg={12}>
                     <CardText >
                         <Name bold light>Aleksanteri Heliövaara</Name>
-                        <Position  light>Sales / Creative Director</Position>
-                        <Email  light>	<FontAwesomeIcon icon="envelope" />  verkkosivutyrityksellesi@gmail.com</Email>
+                        {/* <Position  light>Sales / Creative Director</Position> */}
                         <Phone  light><FontAwesomeIcon icon="phone" /> +358442360403</Phone>
+                        <Email  light>	<FontAwesomeIcon icon="envelope" />  verkkosivutyrityksellesi@gmail.com</Email>
                     </CardText>
                     </StyledCol>
                 </StyledRow>

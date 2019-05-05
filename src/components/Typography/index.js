@@ -5,7 +5,7 @@ import styled, {
 const Font = styled.h1 `
 font-family: 'Raleway', sans-serif;
 // word-break: initial ;
-hyphens: auto;
+// hyphens: auto;
 word-break: normal !important;
 
 
