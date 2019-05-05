@@ -21,6 +21,13 @@ const Logos = styled(LogoGrid)`
     -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 `;
 
+const ListItem = styled.li `
+	font-size: 25px;
+	font-weight: 500;
+	font-family: Raleway, sans-serif;
+	line-height: 30px;
+`
+
 
 
 const Home = () => {
@@ -33,17 +40,42 @@ const Home = () => {
 			topic={'Digitaalinen design edellä.'}
 			ingress={'Yrityksesi digipalvelut ovat suora kosketuspinta asiakkaisiisi. Siksi pelkkä teknologia ei riitä.'}
 			body={'Designaamme aina digiprojektit ja suunnittelemme niistä tarkat käyttöliittymäkuvat ennen varsinaista toteutusta.'}
-		/>
+		>
+		<ul>
+			<ListItem>
+				Palvelumuotoilu ja käyttäjälähtöinen suunnittelu
+			</ListItem>
+			<ListItem>
+				UX ja käyttöliittymäsuunnittelu
+			</ListItem>
+			<ListItem>
+				Digitaalisen suunnittelun prosessit ja yhteistyö teknisen toteutuksen kanssa
+			</ListItem>
+		</ul>
+		</Card>
+
 		<div id='meista'></div>
 		<Card 
 			right
-			image={'https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80'}
+			image={'https://images.unsplash.com/photo-1506634309436-b622418a97b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'}
 			topic={'Millä teknologialla koodaamme?'}
 			ingress={'Käytämme viimeisimpiä - ja parhaiksi havaittuja teknologioita kuten React.js sekä Contentful.'}
-			body={'Viimeisimmät teknologiat edellä valmistelemme yrityksesi kertaheitolla uuteen aikaan. Käytämme koodamiseen React.js JavaScriptiä ja sisällönhallintajärjestelmänä toimii esimerkiksi Contentful.'}
-		/>
+			body={'Viimeisimmät teknologiat edellä valmistelemme yrityksesi kertaheitolla uuteen aikaan. Käytämme koodamiseen React.js kieltä ja sisällönhallintajärjestelmänä toimii esimerkiksi Contentful.'}
+		>
+				<ul>
+			<ListItem>
+				React.js ja modernit Java Script sovellukset
+			</ListItem>
+			<ListItem>
+				Modernit web -sovellukset ja Contentful
+			</ListItem>
+			<ListItem>
+				DevOps, verkko-osoitteiden hankinta ja dokumentointi.
+			</ListItem>
+		</ul>
+		</Card>
 		<Card 
-			image={'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80'}
+			image={'https://images.unsplash.com/photo-1517373116369-9bdb8cdc9f62?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'}
 			topic={'Ylläpito vaivattomasti'}
 			ingress={'Päivitykset ja muutostoiveet käden käänteessä'}
 			body={'On tärkeää huolehtia siitä, että palvelu pysyy hyvin turvassa ja sisältö on kohdillaan. Digikumppanina hoidamme digipalvelua myös sen julkaisun jälkeen.'}

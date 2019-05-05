@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H6, H1, H2, H5,  H4 } from 'components/Typography';
+import { H6, H1, H2, H5, H3,  H4 } from 'components/Typography';
 import Container from 'components/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { StyledRow, StyledCol  } from 'components/FlexBox';
@@ -93,7 +93,7 @@ const Section = () =>
             <Container>
                 <TextContainer>
                     <H1 light bold>Ota yhteyttä!</H1>
-                    <H2 light >Aloitetaan yhteistyö heti!</H2>
+                    <H3 light >Aloitetaan yhteistyö heti!</H3>
 
                 </TextContainer>
 
@@ -107,7 +107,7 @@ const Section = () =>
                         <Name bold light>Aleksanteri Heliövaara</Name>
                         {/* <Position  light>Sales / Creative Director</Position> */}
                         <Phone  light><FontAwesomeIcon icon="phone" /> +358442360403</Phone>
-                        <Email  light>	<FontAwesomeIcon icon="envelope" />  verkkosivutyrityksellesi@gmail.com</Email>
+                        <Email  light>	<FontAwesomeIcon icon="envelope" />  webindigi@gmail.com</Email>
                     </CardText>
                     </StyledCol>
                 </StyledRow>

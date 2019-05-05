@@ -53,6 +53,7 @@ const InfoCard = (props) =>{
 											<H1 bold>{props.topic}</H1>
 											<H4 bold>{props.ingress}</H4>
 											<H5>{props.body}</H5>
+											{props.children}
 										</Text>
 								</StyledCol >
 							</StyledRow>
@@ -63,6 +64,8 @@ const InfoCard = (props) =>{
 										<H1 bold>{props.topic}</H1>
 										<H4 bold>{props.ingress}</H4>
 										<H5>{props.body}</H5>
+										{props.children}
+
 									</Text>
 								</StyledCol >
 								<StyledCol  xs={12} sm={12} md={6} lg={6}>
