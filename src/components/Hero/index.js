@@ -33,7 +33,8 @@ const ContentBlock = styled(Wrapper)`
 	z-index: 2;
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		width: 100vw;
-		margin-left
+		margin-left;
+		top: 10vh
 	}
 `;
 
