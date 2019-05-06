@@ -3,8 +3,9 @@ import { P, H1, H2, H3, H4, H5, H6 } from 'components/Typography';
 import { StyledRow, StyledCol  } from 'components/FlexBox';
 import {Button} from 'components/Button';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
-const Container = styled.div`
+const Container = styled(Fade)`
 	min-height: auto;
 `
 const Text = styled.div`

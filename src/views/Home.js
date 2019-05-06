@@ -10,6 +10,7 @@ import { Button } from 'components/Button';
 import Card from 'components/Card'
 import Section from 'components/Section'
 import LogoGrid from '../components/LogoGrid';
+import Fade from 'react-reveal/Fade';
 
 const Logos = styled(LogoGrid)`
     min-width: 100%;
@@ -37,7 +38,9 @@ const ListItem = styled.li `
 const Home = () => {
   return (
     <div>
-		<Hero />
+		<Fade>  
+			<Hero />
+		</Fade>
 		<div id='palvelumme'></div>
 		<Card 
 			image={'https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'}
