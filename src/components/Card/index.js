@@ -6,23 +6,21 @@ import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
 const Container = styled(Fade)`
-	min-height: auto;
+	max-height: 600px;
 `
 const Text = styled.div`
 	margin-left: 20px;
 	height: auto;
 	padding: 60px;
 		@media (max-width: ${props => props.theme.screenSize.tablet}) {
-		padding: 10px;
-	}`;
+		padding: 10px;}
+`;
 
 const ImageContainer = styled.div`
 	background-position: cover;  
 	background-color: black;
 	object-fit: cover;  
 	height: 100%;
-
-
 `;
 const Image = styled.img`
 	object-fit: cover;  
@@ -30,13 +28,8 @@ const Image = styled.img`
 	// height: 500px !important;
 	width: 100%;
 	opacity: 0.7;
-
 `;
 
-const ProfileButton = styled(Button)`
-	margin-top: 15px;
-	margin-bottom: auto;
-`;
 const InfoCard = (props) =>{
 	return(
 			<Container>
