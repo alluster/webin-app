@@ -1,9 +1,9 @@
 export default {
     colors: {
         black: '#212121',
-        white: '#fff',
+        white: 'white',
         primary: '#FF9700',
-        darkPrimary: '#BC4141',
+        darkPrimary: '#D85300',
         gray: '#F9F9F9',
         darkGray: "#9E9E9E"
     },

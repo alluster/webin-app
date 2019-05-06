@@ -25,8 +25,12 @@ const ListItem = styled.li `
 	font-size: 25px;
 	font-weight: 500;
 	font-family: Raleway, sans-serif;
-	line-height: 30px;
-`
+	line-height: 50px;
+	@media (max-width: ${props => props.theme.screenSize.tablet}) {
+        font-size: 18px;
+    }
+
+`;
 
 
 

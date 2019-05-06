@@ -43,7 +43,7 @@ export const Button = styled.button`
 
         if (props.primary) return css`
             background-color: ${props => props.theme.colors.primary};
-            color: ${props => props.theme.colors.white};
+            color: ${props => props.theme.colors.white} !important;
             transition: all 0.5s;
             -webkit-transition: all 0.5s;
            -moz-transition: all 0.5s;
@@ -52,7 +52,7 @@ export const Button = styled.button`
             }
             @media (max-width: ${props => props.theme.screenSize.tablet}) {
                 :hover {
-                    background: ${props => props.theme.colors.primary};               
+                    background: ${props => props.theme.colors.darkPrimary};               
 
                 }
             }
@@ -82,7 +82,7 @@ export const Button = styled.button`
     ${props => {
         if (props.primary) return css`
             .a {
-                color: ${props => props.theme.colors.white};
+                color: ${props => props.theme.colors.white} !important;
             }
         `;
 

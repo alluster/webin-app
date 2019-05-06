@@ -53,11 +53,17 @@ const GlobalStyle = createGlobalStyle`
     a:hover {
         all: unset;
     }
+    a:href {
+        all: unset;
+    }
+    button {
+        all: unset;
+
+    }
 `;
 
 class App extends Component {
-    componentDidMount(){
-    }
+
   render() {
 
     return (
