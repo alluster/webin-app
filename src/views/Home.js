@@ -26,7 +26,7 @@ const ListItem = styled.li `
 	font-size: 25px;
 	font-weight: 500;
 	font-family: Raleway, sans-serif;
-	line-height: 50px;
+	margin-top: 20px;
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {
         font-size: 18px;
     }
@@ -42,11 +42,12 @@ const Home = () => {
 			<Hero />
 		</Fade>
 		<div id='palvelumme'></div>
+
 		<Card 
 			image={'https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'}
 			topic={'Digitaalinen design edellä.'}
 			ingress={'Yrityksesi digipalvelut ovat suora kosketuspinta asiakkaisiisi. Siksi pelkkä teknologia ei riitä.'}
-			body={'Designaamme aina digiprojektit ja suunnittelemme niistä tarkat käyttöliittymäkuvat ennen varsinaista toteutusta.'}
+			// body={'Designaamme aina digiprojektit ja suunnittelemme niistä tarkat käyttöliittymäkuvat ennen varsinaista toteutusta.'}
 		>
 		<ul>
 			<ListItem>
@@ -67,7 +68,7 @@ const Home = () => {
 			image={'https://images.unsplash.com/photo-1506634309436-b622418a97b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'}
 			topic={'Millä teknologialla koodaamme?'}
 			ingress={'Käytämme viimeisimpiä - ja parhaiksi havaittuja teknologioita kuten React.js sekä Contentful.'}
-			body={'Viimeisimmät teknologiat edellä valmistelemme yrityksesi kertaheitolla uuteen aikaan. Käytämme koodamiseen React.js kieltä ja sisällönhallintajärjestelmänä toimii esimerkiksi Contentful.'}
+			// body={'Viimeisimmät teknologiat edellä valmistelemme yrityksesi kertaheitolla uuteen aikaan. Käytämme koodamiseen React.js kieltä ja sisällönhallintajärjestelmänä toimii esimerkiksi Contentful.'}
 		>
 				<ul>
 			<ListItem>

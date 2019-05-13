@@ -31,8 +31,9 @@ const TextContainer = styled.div`
 
 const CardText = styled.div`
     padding: 10px;
+    transform: translate(0%, 50%);
+
     @media (max-width: ${props => props.theme.screenSize.tablet}) {
-        transform: translate(0%, 0%);
         padding: 10px;
     }
 `;
@@ -91,11 +92,11 @@ const Section = () =>
     <div>
         <Content>
             <Container>
-                <TextContainer>
+                {/* <TextContainer>
                     <H1 light bold>Ota yhteyttä!</H1>
                     <H3 light >Aloitetaan yhteistyö heti!</H3>
 
-                </TextContainer>
+                </TextContainer> */}
 
                 <StyledRow >
 
@@ -104,7 +105,7 @@ const Section = () =>
                     </StyledCol>
                     <StyledCol xs={12} sm={12} md={12} lg={12}>
                     <CardText >
-                        <Name bold light>Aleksanteri Heliövaara</Name>
+                        <Name bold light>Webin.fi</Name>
                         {/* <Position  light>Sales / Creative Director</Position> */}
                         <Phone  light><FontAwesomeIcon icon="phone" /> +358442360403</Phone>
                         <Email  light>	<FontAwesomeIcon icon="envelope" />  webindigi@gmail.com</Email>

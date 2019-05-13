@@ -6,28 +6,32 @@ import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
 const Container = styled(Fade)`
-	max-height: 600px;
+max-height: 750px;
+
 `
 const Text = styled.div`
 	margin-left: 20px;
-	height: auto;
+	height: 100%;
 	padding: 60px;
 		@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		padding: 10px;}
 `;
 
 const ImageContainer = styled.div`
-	background-position: cover;  
 	background-color: black;
-	object-fit: cover;  
-	height: 100%;
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+
+
 `;
 const Image = styled.img`
-	object-fit: cover;  
-	height: 100%;
-	// height: 500px !important;
-	width: 100%;
 	opacity: 0.7;
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+
 `;
 
 const InfoCard = (props) =>{
@@ -37,9 +41,9 @@ const InfoCard = (props) =>{
 						props.right ?
 							<StyledRow>
 								<StyledCol  xs={12} sm={12} md={6} lg={6}>
-										<ImageContainer>
+										{/* <ImageContainer> */}
 											<Image src={props.image} />
-										</ImageContainer>
+										{/* </ImageContainer> */}
 									</StyledCol >
 
 								<StyledCol  xs={12} sm={12} md={6} lg={6}>
