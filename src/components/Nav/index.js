@@ -77,6 +77,7 @@ const NavLink = styled(H5)`
 	font-weight: 500;
 	text-align: right;
 	color: white;
+	cursor: pointer;
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		display: none
 	`;
@@ -110,6 +111,7 @@ const Logo = styled.img`
 	width: 150px;
 	height: auto;
 	margin-top: 20px;
+	cursor: pointer;
 	
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		margin-top: 20px;
