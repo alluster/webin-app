@@ -107,7 +107,7 @@ const Section = () =>
                     <CardText >
                         <Name bold light>Webin.fi</Name>
                         {/* <Position  light>Sales / Creative Director</Position> */}
-                        <Phone  light><FontAwesomeIcon icon="phone" /> +358442360403</Phone>
+                        <Phone  light><FontAwesomeIcon icon="phone" /> +358442360304</Phone>
                         <Email  light>	<FontAwesomeIcon icon="envelope" />  webindigi@gmail.com</Email>
                     </CardText>
                     </StyledCol>
