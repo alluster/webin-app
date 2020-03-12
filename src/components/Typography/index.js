@@ -4,6 +4,7 @@ import styled, {
 
 const Font = styled.h1 `
 font-family: 'Raleway', sans-serif;
+color: ${props => props.theme.colors.black}
 // word-break: initial ;
 // hyphens: auto;
 word-break: normal !important;

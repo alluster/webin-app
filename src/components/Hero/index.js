@@ -24,17 +24,18 @@ const ContentBlock = styled(Wrapper)`
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	left: 50%;
-    transform: translate(-50%, -0%);
+	// left: 50%;
+    // transform: translate(-50%, -0%);
 	position: absolute;
 	top: 20vh;
 	// height: 100vh;
-	text-align: center;
+	text-align: AUTO;
 	z-index: 2;
 	@media (max-width: ${props => props.theme.screenSize.tablet}) {
 		width: 100vw;
 		margin-left;
 		top: 10vh
+		text-align: center;
 	}
 `;
 

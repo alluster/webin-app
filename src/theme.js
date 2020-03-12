@@ -14,11 +14,11 @@ export default {
 
     },
     fontSize: {
-        h1: '3rem',
+        h1: '2.8rem',
         h2: '2.8rem',
         h3: '2.25rem',
-        h4: '2rem',
-        h5: '1.3rem',
+        h4: '1.4rem',
+        h5: '1rem',
         h6: '1rem',
         p: '1rem'
     },

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { P, H1, H2, H3, H4, H5, H6 } from 'components/Typography';
 import { StyledRow, StyledCol  } from 'components/FlexBox';
 import {Button} from 'components/Button';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
 const Container = styled(Fade)`
@@ -10,15 +10,28 @@ max-height: 750px;
 
 `
 const Text = styled.div`
-	margin-left: 20px;
-	height: 100%;
-	padding: 60px;
+	
+	${props => {
+        if (props.right) return css`
+			// margin-right: -300px;
+			padding: 20px;
+
+
+        `;
+        return css`
+		margin-left: 20px;
+		height: 100%;
+		padding: 60px;
 		@media (max-width: ${props => props.theme.screenSize.tablet}) {
-		padding: 10px;}
+			padding: 10px;}
+            
+
+        `;
+    }}
+		
 `;
 
 const ImageContainer = styled.div`
-	background-color: black;
 	max-height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -27,7 +40,7 @@ const ImageContainer = styled.div`
 
 `;
 const Image = styled.img`
-	opacity: 0.7;
+	// opacity: 0.7;
 	max-height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -47,9 +60,9 @@ const InfoCard = (props) =>{
 									</StyledCol >
 
 								<StyledCol  xs={12} sm={12} md={6} lg={6}>
-										<Text >
+										<Text right >
 											<H1 bold>{props.topic}</H1>
-											<H4 bold>{props.ingress}</H4>
+											<H4 >{props.ingress}</H4>
 											<H5>{props.body}</H5>
 											{props.children}
 										</Text>
@@ -60,7 +73,7 @@ const InfoCard = (props) =>{
 								<StyledCol  xs={12} sm={12} md={6} lg={6}>
 									<Text >
 										<H1 bold>{props.topic}</H1>
-										<H4 bold>{props.ingress}</H4>
+										<H4 >{props.ingress}</H4>
 										<H5>{props.body}</H5>
 										{props.children}
 
